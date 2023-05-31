@@ -4,6 +4,7 @@ import markdown
 # Create your models here.
 class Mission(models.Model):
     key = models.CharField(max_length=100)
+    chapter = models.CharField(max_length=100, default='blank')
     content = models.TextField()
     w3w = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
